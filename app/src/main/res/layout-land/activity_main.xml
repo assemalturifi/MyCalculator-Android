@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output" />
+
+    <Button
+        android:id="@+id/ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="A/C"
+        android:onClick="click"
+        app:layout_constraintEnd_toStartOf="@+id/reminder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <Button
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="/"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/reminder"
+        app:layout_constraintStart_toEndOf="@+id/reminder" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="4"
+        android:onClick="click"
+        app:layout_constraintStart_toStartOf="@+id/btn7"
+        app:layout_constraintTop_toBottomOf="@+id/btn7" />
+
+    <Button
+        android:id="@+id/reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="%"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ac"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toEndOf="@+id/ac" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:onClick="click"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toBottomOf="@+id/ac" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="8"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn7"
+        app:layout_constraintStart_toEndOf="@+id/btn7" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="6"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn5"
+        app:layout_constraintStart_toEndOf="@+id/btn5" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="9"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn8"
+        app:layout_constraintStart_toEndOf="@+id/btn8" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="5"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn4"
+        app:layout_constraintStart_toEndOf="@+id/btn4" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/circle_shape"
+        android:text="0"
+        android:onClick="click"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn4" />
+
+    <Button
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="."
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn0"
+        app:layout_constraintStart_toEndOf="@+id/btn0" />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="*"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/divider"
+        app:layout_constraintStart_toEndOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/equl"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="="
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dot"
+        app:layout_constraintStart_toEndOf="@+id/dot" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="-"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn9"
+        app:layout_constraintStart_toEndOf="@+id/btn9" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="+"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn6"
+        app:layout_constraintStart_toEndOf="@+id/btn6" />
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/powerOff"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight=".25"
+        android:text="^2"
+        android:onClick="click"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/equl"
+        app:layout_constraintStart_toEndOf="@+id/equl" />
+
+    <Button
+        android:id="@+id/powerOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttontan"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight=".25"
+        android:text="^"
+        android:onClick="click"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttontan"
+        app:layout_constraintStart_toEndOf="@+id/buttontan" />
+
+    <Button
+        android:id="@+id/buttontan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCos"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight=".25"
+        android:text="tan"
+        android:onClick="click"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/plus"
+        app:layout_constraintStart_toEndOf="@+id/plus" />
+
+    <Button
+        android:id="@+id/buttonCos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSin"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight=".25"
+        android:text="cos"
+        android:onClick="click"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sub"
+        app:layout_constraintStart_toEndOf="@+id/sub" />
+
+    <Button
+        android:id="@+id/openBracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/buttonSin"
+        android:layout_weight=".25"
+        android:text="("
+        android:onClick="click"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonCos"
+        app:layout_constraintStart_toEndOf="@+id/buttonCos" />
+
+    <Button
+        android:id="@+id/closeBracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/openBracket"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/buttontan"
+        android:layout_weight=".25"
+        android:text=")"
+        android:onClick="click"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonSin"
+        app:layout_constraintStart_toEndOf="@+id/buttonSin" />
+
+    <Button
+        android:id="@+id/buttonSin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight=".25"
+        android:text="sin"
+        android:onClick="click"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/multi"
+        app:layout_constraintStart_toEndOf="@+id/multi" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="1"
+        android:onClick="click"
+        app:layout_constraintStart_toStartOf="@+id/btn4"
+        app:layout_constraintTop_toBottomOf="@+id/btn4" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="2"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn1"
+        app:layout_constraintStart_toEndOf="@+id/btn1" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="3"
+        android:onClick="click"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn2"
+        app:layout_constraintStart_toEndOf="@+id/btn2" />
+
+</android.support.constraint.ConstraintLayout>
